@@ -14,3 +14,4 @@ After a clean installation of `hyprland`, some dependencies are needed.
 - `xdg-desktop-portal-hyprland`
 - `xdg-desktop-portal-gtk`
 - `hyprsunset`
+- `hyprland-qt-support`
