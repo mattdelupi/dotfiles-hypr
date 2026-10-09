@@ -58,6 +58,7 @@ hl.on("hyprland.start", function ()
   hl.exec_cmd("hypridle")
   hl.exec_cmd("hyprsunset")
   hl.exec_cmd("swaync")
+  hl.exec_cmd("systemct --user start hyprpolkitagent")
 end)
 
 
