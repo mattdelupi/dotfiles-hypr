@@ -30,10 +30,11 @@ You can easily install it by running the following commands:
 mkdir hyprpolkitagent_src_folder
 cd hyprpolkitagent_src_folder
 git clone https://github.com/hyprwm/hyprpolkitagent
+cd hyprpolkitagent
 cmake --no-warn-unused-cli -DCMAKE_BUILD_TYPE:STRING=Release -DCMAKE_INSTALL_PREFIX:PATH=/usr -S . -B ./build
 cmake --build ./build --config Release --target all -j`nproc 2>/dev/null || getconf NPROCESSORS_CONF`
 sudo cmake --install ./build
-cd ..
+cd ../..
 rm -r hyprpolkitagent_src_folder
 ```
 
