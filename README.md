@@ -35,5 +35,10 @@ cmake --build ./build --config Release --target all -j`nproc 2>/dev/null || getc
 sudo cmake --install ./build
 cd ..
 rm -r hyprpolkitagent_src_folder
+```
+
+And starting it with:
+
+```
 systemctl --user start hyprpolkitagent
 ```
