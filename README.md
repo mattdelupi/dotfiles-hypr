@@ -18,7 +18,7 @@ After a clean installation of `hyprland`, some dependencies are needed.
 - `hyprland-qt-support`
 - `hyprshutdown`
 - `hyprland-guiutils`
-- `hyprpolkitagent` (not included in the official repos, see [here](#installation-of-hyprpolkitagent))
+- `hyprpolkitagent` (not included in the official repos, see [here](#installation-of-hyprpolkitagent) for installation)
 
 ### Installation of hyprpolkitagent
 
