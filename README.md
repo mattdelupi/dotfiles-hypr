@@ -6,6 +6,7 @@ After a clean installation of `hyprland`, some dependencies are needed.
 
 - `wl-clipboard`
 - `waybar`
+- `swaync`
 - `hyprpaper`
 - `hyprpicker`
 - `hyprlauncher`
