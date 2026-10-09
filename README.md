@@ -5,7 +5,7 @@ After a clean installation of `hyprland`, some dependencies are needed.
 ## Dependencies
 
 - `wl-clipboard`
-- `waybar`
+- `waybar` (see [dotfiles-waybar](https://github.com/mattdelupi/dotfiles-waybar) for my setup)
 - `swaync`
 - `hyprpaper`
 - `hyprpicker`
