@@ -16,3 +16,4 @@ After a clean installation of `hyprland`, some dependencies are needed.
 - `hyprsunset`
 - `hyprland-qt-support`
 - `hyprshutdown`
+- `hyprland-guiutils`
