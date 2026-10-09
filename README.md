@@ -38,7 +38,7 @@ cd ../..
 rm -r hyprpolkitagent_src_folder
 ```
 
-And starting it with:
+Then, start it by running:
 
 ```
 systemctl --user start hyprpolkitagent
