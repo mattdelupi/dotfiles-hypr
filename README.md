@@ -5,8 +5,8 @@ After a clean installation of `hyprland`, some dependencies are needed.
 ## Dependencies
 
 - `wl-clipboard`
-- `waybar` (see [dotfiles-waybar](https://github.com/mattdelupi/dotfiles-waybar) for my setup)
-- `swaync`
+- `waybar` (see [dotfiles-waybar](https://github.com/mattdelupi/dotfiles-waybar) repo for my setup)
+- `swaync` (see [related section](#swaync-autostart-conflict) for for troubleshooting systemd autostart conflicts)
 - `hyprpaper`
 - `hyprpicker`
 - `hyprlauncher`
@@ -18,7 +18,31 @@ After a clean installation of `hyprland`, some dependencies are needed.
 - `hyprland-qt-support`
 - `hyprshutdown`
 - `hyprland-guiutils`
-- `hyprpolkitagent` (not included in the official repos, see [here](#installation-of-hyprpolkitagent) for installation)
+- `hyprpolkitagent` (not included in the official repos, see [related section](#installation-of-hyprpolkitagent) for installation)
+
+### Swaync autostart conflict
+
+After booting with systemd you could get errors due to multiple instances of swaync trying to be run. This can happen because inside the `hyprland.lua` file there is a line that makes your system execute `swaync` command immediately after booting up and, if systemd tries to do the same, errors occur. To check whether this happens you can simply look at the output of the following command after booting up:
+
+```
+systemctl --failed
+```
+
+And you can fix it by disabling the service entirely from systemd:
+
+```
+systemctl --user disable swaync
+systemctl --user reset-failed swaync
+```
+
+and rebooting the system.
+
+If the errors still persists, try masking the service:
+
+```
+systemctl --user mask swaync
+systemctl --user reset-failed swaync
+```
 
 ### Installation of hyprpolkitagent
 
