@@ -7,6 +7,7 @@ After a clean installation of `hyprland`, some dependencies are needed.
 - `wl-clipboard`
 - `waybar` (see [dotfiles-waybar](https://github.com/mattdelupi/dotfiles-waybar) repo for my setup)
 - `swaync` (see [related section](#swaync-autostart-conflict) for for troubleshooting systemd autostart conflicts)
+- `rofi`
 - `hyprpaper`
 - `hyprpicker`
 - `hyprlauncher`
